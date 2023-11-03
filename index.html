@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookworms</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Side Navigation Bar -->
+        <nav id="sideNav" class="sideNav">
+            <a href="javascript:void(0)" class="closeButton" onclick="closeNav()">&times;</a>
+            <a href="#joinUs" onclick="closeNav()">Join Us</a>
+            <a href="#topBooks" onclick="closeNav()">Top Books</a>
+            <a href="#movieRecs" onclick="closeNav()">Movies</a>
+        </nav>
+
+        <!-- Logo and Side Button -->
+        <div class="nav">
+            <span onclick="openNav()">&#9776;</span>
+            <a href="#home" class="logo">Bookworms</a>
+        </div>
+
+        <!-- Top Navigation Bar -->
+        <nav class="topNav">
+            <a href="#joinUs">Join Us</a>
+            <a href="#topBooks">Top Books</a>
+            <a href="#movieRecs">Movies</a>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <main>
+        <!-- Introduction and Join -->
+        <section id="home">
+            <div class="background"></div>
+            <div class="intro">
+                <h1 class="logo">Bookworms</h1>
+                <p>a safe place for book nerds</p>
+            </div>
+            <div id="joinUs">
+                <h4>Let's Join Our Club!</h4>
+                <form class="joinUs">
+                    <div class="form">
+                        <label for="email">Email : </label>
+                        <input id="email" type="email" placeholder="Email">
+                    </div>
+                    <div class="form">
+                        <label for="name">Full Name : </label>
+                        <input id="name" type="text" placeholder="Name">
+                    </div>
+                    <div class="form">
+                        <label for="book">Favorite Book : </label>
+                        <input id="book" type="text" placeholder="Favorite Book">
+                    </div>
+                    <div class="form">
+                        <label for="message">Message : </label>
+                        <textarea id="message" rows="10" cols="30"></textarea>
+                    </div>
+                    <div class="form">
+                        <button onclick="submit()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Top Picks Book -->
+        <section id="topBooks">
+            <h2>Our Top Picks</h2>
+            <section class="books">
+                <div class="books">
+                    <img src="./Assets/harryPotter.jpg" alt="Harry Potter by J.K. Rowling">
+                    <a href="https://www.goodreads.com/book/show/72193.Harry_Potter_and_the_Philosopher_s_Stone">Harry
+                        Potter</a>
+                </div>
+                <div class="books">
+                    <img src="./Assets/percyJackson.jpg" alt="Percy Jackson by Rick Riordan">
+                    <a href="https://www.goodreads.com/book/show/28187.The_Lightning_Thief">Percy Jackson</a>
+                </div>
+                <div class="books">
+                    <img src="./Assets/heartbeat.jpg" alt="Heartbeat by Jealoucy">
+                    <a href="https://www.goodreads.com/book/show/32571784-heartbeat">Heartbeat</a>
+                </div>
+                <div class="books">
+                    <img src="./Assets/myNameIsLuca.jpg" alt="My Name is Luca by Ginger Elyse Shelley">
+                    <a href="https://www.goodreads.com/book/show/22731910-my-name-is-luca">My Name is Luca</a>
+                </div>
+                <div class="books">
+                    <img src="./Assets/tujuhHariUntukKeshia.jpg" alt="Tujuh Hari untuk Keshia by Inggrid Sonya">
+                    <a href="https://www.goodreads.com/book/show/43831613-tujuh-hari-untuk-keshia">Tujuh Hari untuk
+                        Keshia</a>
+                </div>
+                <div class="books">
+                    <img src="./Assets/invalidite.jpg" alt="Invalidite by Faradita">
+                    <a href="https://www.goodreads.com/book/show/40729400-invalidite">Invalidite</a>
+                </div>
+            </section>
+        </section>
+
+        <!-- Movie Recommendation -->
+        <section id="movieRecs">
+            <h2>Movie Adaptation Recommendation</h2>
+            <div class="movie">
+                <article>
+                    <h3>Harry Potter</h3>
+                    <p>Harry Potter is a film series based on the eponymous novels by British author J. K. Rowling. The
+                        series is produced and distributed by Warner Bros. Pictures and consists of eight fantasy films,
+                        beginning with "Harry Potter and the Philosopher's Stone"</p>
+                </article>
+                <iframe src="https://www.youtube.com/embed/VyHV0BRtdxo?si=0T8f30rIjxI-I7Sk"
+                    title="Harry Potter and the Sorcerer's Stone" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="movie">
+                <iframe src="https://www.youtube.com/embed/gA8RMj1l0yg?si=yJ_UaSHNyh2V0r71"
+                    title="Percy Jackson and The Olympians" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <article>
+                    <h3>Percy Jackson</h3>
+                    <p>Percy Jackson & the Olympians is a two-film series based on the novel series of the same name by
+                        the author Rick Riordan. The series was distributed by 20th Century Fox, produced by
+                        1492Pictures and consists of two installments.</p>
+                </article>
+            </div>
+            <div class="movie">
+                <article>
+                    <h3>Sin</h3>
+                    <p>Sin or Sin: When Your Lover is Your Own Brother is a 2019 Indonesian romantic film adapted from
+                        the 2017 novel of the same name. The film was directed by Herwin Novianto and produced by Falcon
+                        Pictures, stared Bryan Domani and Mawar de Jongh as the main roles.</p>
+                </article>
+                <iframe src="https://www.youtube.com/embed/DTtaFo9bDbs?si=U2OdYyLaGrM2Bp_R" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>created by: arisarae24</footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
