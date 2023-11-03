@@ -18,6 +18,7 @@
             <a href="#joinUs" onclick="closeNav()">Join Us</a>
             <a href="#topBooks" onclick="closeNav()">Top Books</a>
             <a href="#movieRecs" onclick="closeNav()">Movies</a>
+            <a href="#more" onclick="closeNav()">More</a>
         </nav>
 
         <!-- Logo and Side Button -->
@@ -31,6 +32,7 @@
             <a href="#joinUs">Join Us</a>
             <a href="#topBooks">Top Books</a>
             <a href="#movieRecs">Movies</a>
+            <a href="#more">More</a>
         </nav>
     </header>
 
@@ -48,15 +50,19 @@
                 <form class="joinUs">
                     <div class="form">
                         <label for="email">Email : </label>
-                        <input id="email" type="email" placeholder="Email">
+                        <input id="email" type="email" placeholder="Email" required>
                     </div>
                     <div class="form">
                         <label for="name">Full Name : </label>
-                        <input id="name" type="text" placeholder="Name">
+                        <input id="name" type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form">
+                        <label for="birth">Date of Birth : </label>
+                        <input id="birth" type="date" placeholder="Date of Birth" required>
                     </div>
                     <div class="form">
                         <label for="book">Favorite Book : </label>
-                        <input id="book" type="text" placeholder="Favorite Book">
+                        <input id="book" type="text" placeholder="Favorite Book" required>
                     </div>
                     <div class="form">
                         <label for="message">Message : </label>
@@ -141,6 +147,19 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
+        </section>
+
+        <!-- Others -->
+        <section id="more">
+            <h2>More From Us</h2>
+            <section class="grid">
+                <div class="items" id="one">Soon.1</div>
+                <div class="items" id="two">Soon.2</div>
+                <div class="items" id="three">Soon.3</div>
+                <div class="items" id="four">Soon.4</div>
+                <div class="items" id="five">Soon.5</div>
+                <div class="items" id="six">Soon.6</div>
+            </section>
         </section>
     </main>
     <footer>created by: arisarae24</footer>

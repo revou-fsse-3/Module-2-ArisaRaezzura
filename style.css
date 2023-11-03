@@ -147,6 +147,7 @@ span {
     opacity: 0.4;
     width: 100%;
     height: 550px;
+    background-size: cover;
 }
 
 #home {
@@ -158,7 +159,7 @@ span {
 }
 
 .intro {
-    width: 60%;
+    width: 55%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -172,7 +173,7 @@ span {
 }
 
 #joinUs {
-    width: 321px;
+    width: auto;
     padding: 35px;
     background: rgba(188, 163, 127, 0.9);
     border-radius: 10px;
@@ -183,7 +184,6 @@ span {
 div.form {
     margin-bottom: 10px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -197,7 +197,7 @@ label {
 input {
     height: 30px;
     margin-left: 3px;
-    width: 200px;
+    width: 190px;
     box-sizing: border-box;
     border: 2px solid #BCA37F;
     font-size: 15px;
@@ -205,7 +205,7 @@ input {
 
 textarea {
     margin: 3px;
-    width: 200px;
+    width: 190px;
     height: 100px;
     box-sizing: border-box;
     border: 2px solid #BCA37F;
@@ -218,7 +218,7 @@ button {
     border: 2px solid #BCA37F;
     border-radius: 5px;
     font-size: 15px;
-    width: 321px;
+    width: 311px;
     background-color: #EAD7BB;
     color: #113946;
 }
@@ -257,6 +257,10 @@ div img {
     height: 250px;
 }
 
+div img:hover {
+    transform: scale(1.2);
+}
+
 .books a {
     margin: 20px 0px;
     font-size: 18px;
@@ -290,6 +294,54 @@ iframe {
 }
 
 
+/* More From Us */
+.grid {
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, calc(90%/3));
+    grid-template-rows: repeat(4, 100px);
+    grid-gap: 15px;
+}
+
+.items {
+    background-color: #BCA37F;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#one {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+#two {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+#three {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+#four {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
+
+#five {
+    grid-column: 3 / 4;
+    grid-row: 2 / 5;
+}
+
+#six {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
 /* Footer */
 footer {
     margin-top: 25px;
@@ -298,36 +350,12 @@ footer {
 }
 
 
-/*** Responsive ***/
 
+/*** Responsive ***/
 /* Tablet */
 @media only screen and (max-width: 1280px) {
     h1 {
-        font-size: 75px;
-    }
-
-    h4 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 18px;
-    }
-
-    div.form {
-        flex-direction: column;
-    }
-
-    textarea {
-        height: 60px;
-    }
-
-    button {
-        width: 203px;
-    }
-
-    #joinUs {
-        width: 203px;
+        font-size: 90px;
     }
 
     div.books {
@@ -350,6 +378,16 @@ footer {
     }
 }
 
+@media only screen and (max-width: 1075px) {
+    h1 {
+        font-size: 75px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
 @media only screen and (max-width: 975px) {
     div.movie {
         width: 80%;
@@ -357,6 +395,30 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    #home {
+        height: 550px;
+    }
+
+    .background {
+        height: 620px;
+    }
+
+    #joinUs {
+        max-width: 193px;
+    }
+
+    button {
+        width: 203px;
+    }
+
+    textarea {
+        height: 45px;
+    }
+
     div.movie {
         width: 85%;
         margin: 40px 0px;
@@ -373,10 +435,6 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-    h1 {
-        font-size: 60px;
-    }
-
     h2 {
         font-size: 40px;
     }
@@ -446,8 +504,8 @@ footer {
     }
 
     #joinUs {
-        width: 321px;
         margin: 75px 0px 0px 0px;
+        max-width: none;
     }
 
     div.form {
@@ -567,7 +625,6 @@ footer {
     }
 
     #joinUs {
-        width: 301px;
         margin: 45px 0px 0px 0px;
         padding: 20px;
     }
