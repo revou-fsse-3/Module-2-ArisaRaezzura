@@ -17,7 +17,7 @@
 
 /* Main and Texts */
 body {
-    font-family: "IM Fell English Regular", sans-serif;
+    font-family: "IM Fell English Regular", serif;
     background-color: #FFF2D8;
     color: #113946;
     margin: 0px;
@@ -25,7 +25,7 @@ body {
 }
 
 .logo {
-    font-family: "Modern Aesthetic", cursive;
+    font-family: "Modern Aesthetic", cursive, serif;
 }
 
 h1 {
@@ -258,7 +258,7 @@ div img {
 }
 
 div img:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 .books a {
