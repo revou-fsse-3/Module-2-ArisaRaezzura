@@ -32,6 +32,18 @@ h1 {
     font-size: 100px;
     margin: 0px;
     text-shadow: 2px 2px 5px #EAD7BB;
+    animation-duration: 3s;
+    animation-name: title;
+}
+
+@keyframes title {
+    from {
+        font-size: 0px;
+    }
+
+    to {
+        font-size: 100px;
+    }
 }
 
 h2 {
@@ -59,6 +71,7 @@ p {
 
 /* Header */
 header {
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     background-color: #113946;
@@ -232,6 +245,146 @@ button:focus {
 }
 
 
+/* Explore */
+.explore {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, calc(90%/5));
+    grid-template-rows: repeat(3, 130px);
+    grid-gap: 10px;
+    margin: 0px 5%;
+}
+
+div.genre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    transition-property: filter;
+    transition-duration: 1s;
+}
+
+div.genre:hover {
+    filter: grayscale(0%);
+}
+
+.genreBack {
+    z-index: -1;
+    position: absolute;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+p.genre {
+    color: #113946;
+    font-family: "Modern Aesthetic";
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-shadow: 1px 2px 1px #EAD7BB;
+}
+
+#one {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#one .genreBack {
+    background: url(./Assets/romance.jpg) center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+#two {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+#two .genreBack {
+    background: url(./Assets/children.jpg) center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+#three {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+#three .genreBack {
+    background: url(./Assets/fantasy.jpg) center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+#four {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+#four .genreBack {
+    background: url(./Assets/scienceFiction.png) center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+#five {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+}
+
+#five .genreBack {
+    background: url(./Assets/action.jpg) center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+#six {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+
+#six .genreBack {
+    background: url(./Assets/horror.jpg) center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+#seven {
+    grid-column: 4 / 5;
+    grid-row: 2 / 4;
+}
+
+#seven .genreBack {
+    background: url(./Assets/biography.png) center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+#eight {
+    grid-column: 5 / 6;
+    grid-row: 1 / 4;
+}
+
+#eight .genreBack {
+    background: url(./Assets/moreBooks.jpg) center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
 /* Top Books */
 #topBooks {
     display: flex;
@@ -252,12 +405,12 @@ div.books {
     width: calc(100% / 6);
 }
 
-div img {
+div.books img {
     border-radius: 5%;
     height: 250px;
 }
 
-div img:hover {
+div.books img:hover {
     transform: scale(1.15);
 }
 
@@ -294,54 +447,6 @@ iframe {
 }
 
 
-/* More From Us */
-.grid {
-    justify-content: center;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, calc(90%/3));
-    grid-template-rows: repeat(4, 100px);
-    grid-gap: 15px;
-}
-
-.items {
-    background-color: #BCA37F;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#one {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-}
-
-#two {
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
-}
-
-#three {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-}
-
-#four {
-    grid-column: 2 / 3;
-    grid-row: 2 / 4;
-}
-
-#five {
-    grid-column: 3 / 4;
-    grid-row: 2 / 5;
-}
-
-#six {
-    grid-column: 1 / 3;
-    grid-row: 4 / 5;
-}
-
 /* Footer */
 footer {
     margin-top: 25px;
@@ -356,6 +461,16 @@ footer {
 @media only screen and (max-width: 1280px) {
     h1 {
         font-size: 90px;
+    }
+
+    @keyframes title {
+        from {
+            font-size: 0px;
+        }
+
+        to {
+            font-size: 90px;
+        }
     }
 
     div.books {
@@ -383,6 +498,16 @@ footer {
         font-size: 75px;
     }
 
+    @keyframes title {
+        from {
+            font-size: 0px;
+        }
+
+        to {
+            font-size: 75px;
+        }
+    }
+
     p {
         font-size: 18px;
     }
@@ -397,6 +522,16 @@ footer {
 @media only screen and (max-width: 900px) {
     h1 {
         font-size: 60px;
+    }
+
+    @keyframes title {
+        from {
+            font-size: 0px;
+        }
+
+        to {
+            font-size: 60px;
+        }
     }
 
     #home {
@@ -459,6 +594,16 @@ footer {
         font-size: 52px;
     }
 
+    @keyframes title {
+        from {
+            font-size: 0px;
+        }
+
+        to {
+            font-size: 52px;
+        }
+    }
+
     .intro {
         width: 53%;
     }
@@ -468,6 +613,21 @@ footer {
 @media only screen and (max-width: 650px) {
     h1 {
         font-size: 78px;
+    }
+
+    @keyframes title {
+        from {
+            font-size: 0px;
+        }
+
+        to {
+            font-size: 78px;
+        }
+    }
+
+    h2 {
+        padding: 65px 0px 30px 0px;
+        ;
     }
 
     span {
@@ -545,6 +705,16 @@ footer {
         font-size: 63px;
     }
 
+    @keyframes title {
+        from {
+            font-size: 0px;
+        }
+
+        to {
+            font-size: 63px;
+        }
+    }
+
     iframe {
         height: 200px;
     }
@@ -566,19 +736,14 @@ footer {
         font-size: 55px;
     }
 
-    article {
-        width: 85%;
-    }
+    @keyframes title {
+        from {
+            font-size: 0px;
+        }
 
-    iframe {
-        width: 85%;
-        height: 190px;
-    }
-}
-
-@media only screen and (max-width: 460px) {
-    h1 {
-        font-size: 55px;
+        to {
+            font-size: 55px;
+        }
     }
 
     article {
@@ -594,6 +759,16 @@ footer {
 @media only screen and (max-width: 400px) {
     h1 {
         font-size: 50px;
+    }
+
+    @keyframes title {
+        from {
+            font-size: 0px;
+        }
+
+        to {
+            font-size: 50px;
+        }
     }
 
     span {
@@ -642,7 +817,7 @@ footer {
         width: 301px;
     }
 
-    div img {
+    div.books img {
         height: 200px;
     }
 
