@@ -1,14 +1,6 @@
-# Module 2 Assignment
-> This is a continuation assignment from the first module given by RevoU. The objective of this assignment is to make a website that can give smooth experience for user, and to deploy the website. Here I make a website name "Bookworms".
-
-
-### Updates
-|Project Name (Week)|Link                               |
-|-------------------|-----------------------------------|
-|Bookworms (Week 1) |https://week1rae.netlify.app/      |
-|Bookworms (Week 2) |https://week2rae.netlify.app/      |
-|Bookworms (Week 3) |https://week3rae.netlify.app/      |
-|Bookworms (Final)  |https://finalbookworms.netlify.app/|
+# Module 2 Assignment (Bookworms)
+> https://finalbookworms.netlify.app/
+This is a continuation assignment from the first module given by RevoU. The objective of this assignment is to make a website that can give smooth experience for user, and to deploy the website. Here I make a website name "Bookworms".
 
 
 ### Deploy from GitHub
